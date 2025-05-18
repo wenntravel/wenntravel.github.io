@@ -41,8 +41,6 @@ const packages = [
 
 export default function DestinationDetail() {
   const { city } = useParams();
-  // For now, only Kashmir mockup
-  const isKashmir = city === "kashmir";
   return (
     <main className="min-h-screen bg-gray-50 pb-16">
       {/* Hero */}

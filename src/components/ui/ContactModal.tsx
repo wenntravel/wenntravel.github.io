@@ -18,7 +18,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ open, onClose }) => {
           ×
         </button>
         <h2 className="text-3xl font-extrabold mb-1 text-center text-green-800">Contact Us</h2>
-        <p className="text-center text-gray-500 mb-6">We'd love to hear from you!</p>
+        <p className="text-center text-gray-500 mb-6">We&apos;d love to hear from you!</p>
         <div className="space-y-5">
           <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-green-50 transition">
             <span className="bg-green-100 text-green-600 rounded-full p-2">
