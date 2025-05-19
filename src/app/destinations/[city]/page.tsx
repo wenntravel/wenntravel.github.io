@@ -41,18 +41,20 @@ const packages = [
 
 export default function DestinationDetail() {
   const { city } = useParams();
+  const cityName = city ? city.toString().charAt(0).toUpperCase() + city.toString().slice(1) : 'Destination';
+  
   return (
     <main className="min-h-screen bg-gray-50 pb-16">
       {/* Hero */}
       <div className="relative w-full h-64 md:h-80">
         <Image
           src="/images/kashmir-hero.jpg"
-          alt="Kashmir Holidays Packages"
+          alt={`${cityName} Holidays Packages`}
           fill
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">Kashmir Holidays Packages</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">{cityName} Holidays Packages</h1>
         </div>
       </div>
       {/* Packages Grid */}

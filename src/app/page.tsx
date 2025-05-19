@@ -86,12 +86,16 @@ export default function Home() {
       setTimeout(() => s.moveToIdx(0, true), 0);
     },
   });
+
   // Auto-slide
   useEffect(() => {
-    if (!instanceRef.current) return;
+    const slider = instanceRef.current;
+    if (!slider) return;
+    
     const interval = setInterval(() => {
-      instanceRef.current.next();
+      slider.next();
     }, 2500);
+    
     return () => clearInterval(interval);
   }, [instanceRef]);
 
@@ -116,7 +120,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center mb-12">
             <span className="bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-medium mb-4">Popular Destinations</span>
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">Traveler's Favorite</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-2">Traveler&apos;s Favorite</h2>
           </div>
           <div ref={sliderRef} className="keen-slider">
             {popularDestinations.map((tour) => (
