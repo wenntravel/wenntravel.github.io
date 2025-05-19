@@ -114,7 +114,7 @@ export default function Home() {
       </section>
       
       {/* Popular Destinations Section */}
-      <section id="popular-destinations" className="py-16 bg-gray-50">
+      <section id="popular-destinations" className="py-16 bg-gray-50 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center mb-12">
             <span className="bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-medium mb-4">Popular Destinations</span>
