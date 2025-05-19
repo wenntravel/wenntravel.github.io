@@ -2,11 +2,9 @@
 import Image from "next/image";
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
-import TourCard from '@/components/tours/TourCard';
-import Button from '@/components/ui/Button';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 // Mock data for popular destinations (Indian cities)
 const popularDestinations = [
